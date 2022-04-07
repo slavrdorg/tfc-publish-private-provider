@@ -122,7 +122,7 @@ A Terraform Cloud owner user api token is needed to perform the requests.
 
          
       * `namespace` is the name of your terraform cloud organization.
-      * `ascii-armor` is the exported public gpg key with new lines replaces with literal `\n` characters. To obtain it you can run `sed 's/$\\n/g' gpg-key.pub | tr -d '\n\r'` assuming that the key is in the `gpg-key.pub` file.
+      * `ascii-armor` is the exported public gpg key with new lines replaces with literal `\n` characters. To obtain it you can run `sed 's/$/\\n/g' gpg-key.pub | tr -d '\n\r'` assuming that the key is in the `gpg-key.pub` file.
   
 
     * Make the api call to add the gpg key to the private registry of your Terraform Cloud organization.
