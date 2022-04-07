@@ -31,7 +31,7 @@ The guide assumes that commands will be run on MacOS but they should be almost i
     * To cerate a new one run the commend below and follow the instructions.
 
       ```bash
-      gpg --generate-key
+      gpg --full-generate-key
       ```
 
       The key should use the RSA algorithm. Select other options on your discretion.
