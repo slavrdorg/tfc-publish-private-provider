@@ -29,11 +29,15 @@ The guide assumes that commands will be run on MacOS but they should be almost i
   * Have a pgp keypair that will be used for signing the provider release. 
 
     * To cerate a new one run the commend below and follow the instructions.
+
       ```bash
       gpg --generate-key
       ```
+
+      The key should use the RSA algorithm. Select other options on your discretion.
    
     * Export the public key
+
       ```bash
       gpg -o gpg-key.pub -a --export <key id or email>
       ```
